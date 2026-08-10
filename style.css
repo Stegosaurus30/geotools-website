@@ -15,20 +15,19 @@ body {
 }
 
 header {
+    position: relative;
     padding: 40px 0;
     border-bottom: 2px solid var(--text);
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: felx-start;
-    gap: 30px;
-}
-
 .header-rig {
-    width: 100px;
+    position: absolute;
+    width: 120px;
     height: auto;
+
+    left: 30px;
+    bottom: 0;
+
     image-rendering: pixelated;
 }
 
