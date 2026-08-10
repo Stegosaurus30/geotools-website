@@ -1,13 +1,22 @@
+:root {
+    --bg: #111111;
+    --surface: #181818;
+    --text: #eeeeee;
+    --muted: #9a9a9a;
+    --line: #3a3a3a;
+    --accent: #ffd84d;
+}
+
 body {
     margin: 0;
-    background-color: #111111;
-    color: #eeeeee;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: monospace;
 }
 
 header {
     padding: 40px 0;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid var(--text);
 }
 
 h1 {
@@ -47,7 +56,8 @@ section p {
 }
 
 .tool-card {
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--line);
+    background-color: var(--surface);
     padding: 25px;
     margin-top: 30px;
 }
@@ -80,9 +90,23 @@ section p {
 .status-light {
     width: 8px;
     height: 8px;
-    background-color: #ffd84d;
+    background-color: var(--accent);
     display: inline-block;
     animation: status-blink 2s infinite;
+}
+
+.status-active .status-light {
+    background-color: #8fd694;
+    animation: none;
+}
+
+.status-beta .status-light {
+    background-color: #6fb7ff;
+    animation: none;
+}
+
+.status-development .status-light {
+    background-color: var(--accent);
 }
 
 @keyframes status-blink {
@@ -112,7 +136,8 @@ section p {
     gap: 12px 25px;
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 1px solid #444444;
+    border-top: 1px solid var(--line);
     font-size: 13px;
     letter-spacing: 1px;
+    color: var(--muted);
 }
