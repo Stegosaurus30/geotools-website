@@ -82,6 +82,21 @@ section p {
     height: 8px;
     background-color: #ffd84d;
     display: inline-block;
+    animation: status-blink 2s infinite;
+}
+
+@keyframes status-blink {
+    0%, 45% {
+        opacity: 1;
+    }
+
+    50%, 95% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .tool-card p {
