@@ -141,3 +141,41 @@ section p {
     letter-spacing: 1px;
     color: var(--muted);
 }
+
+.behind-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.pixel-placeholder {
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0;
+
+    border: 1px solid var(--line);
+    background-color: var(--surface);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: var(--muted);
+}
+
+.behind-text {
+    max-width: 600px;
+}
+
+.behind-text p {
+    max-width: none;
+}
+
+.signature {
+    color: var(--accent);
+    margin-top: 20px;
+}
