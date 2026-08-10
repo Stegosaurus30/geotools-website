@@ -90,3 +90,14 @@ section p {
     line-height: 1.6;
     max-width: none;
 }
+
+.tool-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #444444;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
