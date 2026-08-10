@@ -22,12 +22,12 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: felx-start;
+    gap: 30px;
 }
 
 .header-rig {
-    width: 120px;
+    width: 100px;
     height: auto;
     image-rendering: pixelated;
 }
