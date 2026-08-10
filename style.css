@@ -1,5 +1,22 @@
 body {
+    margin: 0;
     background-color: #111111;
     color: #eeeeee;
     font-family: monospace;
+}
+
+header {
+    padding: 40px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
 }
