@@ -179,3 +179,15 @@ section p {
     color: var(--accent);
     margin-top: 20px;
 }
+
+footer {
+    border-top: 1px solid var(--line);
+    padding: 25px 0;
+    color: var(--muted);
+}
+
+footer p {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
