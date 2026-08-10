@@ -69,9 +69,19 @@ section p {
 }
 
 .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin-left: auto;
     font-size: 12px;
     letter-spacing: 1px;
+}
+
+.status-light {
+    width: 8px;
+    height: 8px;
+    background-color: #ffd84d;
+    display: inline-block;
 }
 
 .tool-card p {
